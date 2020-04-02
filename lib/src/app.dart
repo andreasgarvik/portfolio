@@ -13,7 +13,7 @@ class App extends StatelessWidget {
                 margin: EdgeInsets.only(top: 20),
                 child: Text(
                   'under construction',
-                  style: TextStyle(color: Colors.yellow[600], fontSize: 18),
+                  style: TextStyle(color: Colors.yellow[600], fontSize: 16),
                 ),
               ),
               Container(
