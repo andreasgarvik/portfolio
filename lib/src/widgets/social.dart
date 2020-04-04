@@ -1,5 +1,6 @@
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
+import '../tools/mouse_cursor.dart';
 
 class Social extends StatelessWidget {
   _launchURL(String url) async {
@@ -17,28 +18,35 @@ class Social extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          GestureDetector(
-            onTap: () => _launchURL("https://www.facebook.com/andreas.garvik"),
-            child: Image.asset(
-              'assets/facebook.png',
-              width: 50.0,
+          MouseCursor(
+            child: GestureDetector(
+              onTap: () =>
+                  _launchURL("https://www.facebook.com/andreas.garvik"),
+              child: Image.asset(
+                'assets/facebook.png',
+                width: 50.0,
+              ),
             ),
           ),
-          GestureDetector(
-            onTap: () => _launchURL("https://github.com/andreasgarvik"),
-            child: Image.asset(
-              'assets/github.png',
-              width: 50.0,
+          MouseCursor(
+            child: GestureDetector(
+              onTap: () => _launchURL("https://github.com/andreasgarvik"),
+              child: Image.asset(
+                'assets/github.png',
+                width: 50.0,
+              ),
             ),
           ),
-          GestureDetector(
-            onTap: () => _launchURL(
-                "https://www.linkedin.com/in/andreas-garvik-911330158"),
-            child: Image.asset(
-              'assets/linkedin.png',
-              width: 50.0,
+          MouseCursor(
+            child: GestureDetector(
+              onTap: () => _launchURL(
+                  "https://www.linkedin.com/in/andreas-garvik-911330158"),
+              child: Image.asset(
+                'assets/linkedin.png',
+                width: 50.0,
+              ),
             ),
-          )
+          ),
         ],
       ),
     );

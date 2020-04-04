@@ -8,17 +8,17 @@ class Work extends StatelessWidget {
     return Scaffold(
       appBar: Nav(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        child: ListView(
+          padding: EdgeInsets.only(top: 100.0),
           children: <Widget>[
             WorkCard(
               'assets/cloudlyricsapp.png',
-              'reactjs        nodejs        expressjs        google cloud        docker',
+              'reactjs nodejs googlecloud docker',
               'https://cloudlyricsapp-m7pao6rimq-uc.a.run.app',
             ),
             WorkCard(
               'assets/siamawanders.png',
-              'reactjs        firebase',
+              'reactjs firebase',
               'https://siamawanders.com/',
             ),
           ],

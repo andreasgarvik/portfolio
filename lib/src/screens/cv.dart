@@ -1,98 +1,48 @@
 import 'package:flutter/material.dart';
 import '../widgets/nav.dart';
+import '../widgets/cv_tile.dart';
 
 class Cv extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Nav(),
-      body: SizedBox.expand(
-        child: Container(
-          margin: EdgeInsets.only(top: 100.0),
-          child: RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              style: TextStyle(
-                color: Colors.amber[500],
-                fontSize: 18.0,
-                height: 2.0,
+      body: Center(
+        child: SizedBox(
+          width: 450,
+          child: ListView(
+            padding: EdgeInsets.only(top: 100.0),
+            children: [
+              CvTile('degrees', 18.0, 'status'),
+              CvTile('bachelor', 16.0, 'doing'),
+              Divider(
+                thickness: 1.0,
               ),
-              children: [
-                TextSpan(
-                  text: 'degrees\n',
-                ),
-                TextSpan(
-                  text: 'currently doing bachelor\n\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'experience\n',
-                ),
-                TextSpan(
-                  text: 'sbanken       1 year\n\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'school\n',
-                ),
-                TextSpan(
-                  text: 'queensland university of technology       0.5 years\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text:
-                      'western norway university of applied science       3 years\n\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'knowledge\n',
-                ),
-                TextSpan(
-                  text: 'reactjs       great\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'nodejs       great\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'javascript       great\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'flutter       great\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'github      good\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'java       good\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'docker       some\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'golang       some\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'docker       some\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'kubernetes       some\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-                TextSpan(
-                  text: 'linux      some\n',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-              ],
-            ),
+              CvTile('experience', 18.0, 'length'),
+              CvTile('sbanken', 16.0, '1 year'),
+              Divider(
+                thickness: 1.0,
+              ),
+              CvTile('school', 18.0, 'length'),
+              CvTile('queensland university of technology', 16.0, '0.5 years'),
+              CvTile('western norway university of applied sciences', 16.0,
+                  '2.5 years'),
+              Divider(
+                thickness: 1.0,
+              ),
+              CvTile('knowledge', 18.0, 'skill'),
+              CvTile('reactjs', 16.0, 'great'),
+              CvTile('nodejs', 16.0, 'great'),
+              CvTile('javascript', 16.0, 'great'),
+              CvTile('flutter', 16.0, 'great'),
+              CvTile('github', 16.0, 'good'),
+              CvTile('java', 16.0, 'good'),
+              CvTile('golang', 16.0, 'good'),
+              CvTile('docker', 16.0, 'good'),
+              CvTile('bachelor', 16.0, 'doing'),
+              CvTile('kubernetes', 16.0, 'some'),
+              CvTile('linux', 16.0, 'some'),
+            ],
           ),
         ),
       ),
