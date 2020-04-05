@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Andreas Garvik',
+      title: 'portfolio',
       home: Home(),
       onGenerateRoute: (routeSettings) {
         if (routeSettings.name == 'home') {

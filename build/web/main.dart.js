@@ -39286,7 +39286,7 @@ case 1:return P.a4(q,s)}})
 return P.a6($async$e9,s)}}
 E.IH.prototype={}
 S.tb.prototype={
-H:function(a){return new S.o8(new Y.nC(null),new S.CY(),"Andreas Garvik",!1,null)}}
+H:function(a){return new S.o8(new Y.nC(null),new S.CY(),"portfolio",!1,null)}}
 S.CY.prototype={
 $1:function(a){var t=a.a
 if(t==="home")return V.RV(new S.CV(),u.z)
