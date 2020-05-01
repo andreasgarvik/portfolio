@@ -13,10 +13,10 @@ class Social extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 515.0,
+    return Padding(
+      padding: const EdgeInsets.only(left: 25.0, right: 32.0),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           MouseCursor(
             child: GestureDetector(

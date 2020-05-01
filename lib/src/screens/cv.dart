@@ -8,10 +8,7 @@ class Cv extends StatelessWidget {
     return Scaffold(
       appBar: Nav(),
       body: Center(
-        child: SizedBox(
-          width: 450,
-          child: CvList(),
-        ),
+        child: CvList(),
       ),
       backgroundColor: Colors.blueGrey[900],
     );

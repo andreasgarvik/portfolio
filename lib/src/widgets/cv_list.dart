@@ -65,11 +65,15 @@ class _CvListState extends State<CvList> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(top: 50.0, left: 30.0, right: 30.0, bottom: 50.0),
-      child: AnimatedList(
-        key: _listKey,
-        itemBuilder: _buildItem,
+    return SizedBox(
+      width: 600.0,
+      child: Container(
+        margin:
+            EdgeInsets.only(top: 50.0, left: 30.0, right: 30.0, bottom: 50.0),
+        child: AnimatedList(
+          key: _listKey,
+          itemBuilder: _buildItem,
+        ),
       ),
     );
   }
