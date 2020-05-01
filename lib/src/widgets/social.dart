@@ -14,7 +14,7 @@ class Social extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 540.0,
+      width: 515.0,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
