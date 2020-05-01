@@ -1,6 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+import '../custom/custom_scroll_behavior.dart';
 import '../models/cv_model.dart';
 import '../widgets/cv_tile.dart';
 
@@ -71,9 +71,12 @@ class _CvListState extends State<CvList> {
       child: Container(
         margin:
             EdgeInsets.only(top: 50.0, left: 30.0, right: 30.0, bottom: 50.0),
-        child: AnimatedList(
-          key: _listKey,
-          itemBuilder: _buildItem,
+        child: ScrollConfiguration(
+          behavior: CustomScrollBehavior(),
+          child: AnimatedList(
+            key: _listKey,
+            itemBuilder: _buildItem,
+          ),
         ),
       ),
     );
