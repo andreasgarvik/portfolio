@@ -14,10 +14,13 @@ class CvTile extends StatelessWidget {
       axis: Axis.vertical,
       sizeFactor: animation,
       child: ListTile(
+        contentPadding: model.size == 22
+            ? EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0)
+            : EdgeInsets.symmetric(horizontal: 16.0),
         title: Text(
           model.text,
           style: TextStyle(
-            color: Colors.amber[500],
+            color: model.size == 22 ? Color(0xAAFFC107) : Colors.amber[500],
             fontSize: model.size,
             height: 2.0,
           ),
@@ -25,7 +28,7 @@ class CvTile extends StatelessWidget {
         trailing: Text(
           model.status,
           style: TextStyle(
-            color: Colors.amber[500],
+            color: model.size == 22 ? Color(0xAAFFC107) : Colors.amber[500],
             fontSize: model.size,
             height: 2.0,
           ),
