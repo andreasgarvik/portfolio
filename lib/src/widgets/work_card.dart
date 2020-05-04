@@ -29,7 +29,7 @@ class _WorkCardState extends State<WorkCard>
     super.initState();
     controller = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 500),
+      duration: Duration(seconds: 1),
     );
     controller.forward();
   }

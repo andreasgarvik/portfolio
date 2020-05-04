@@ -425,7 +425,7 @@ case 1:return 4
 case 2:return 2
 default:return C.f.AG(1,a)}},
 lS:function(a){var t=J.jP(a)
-return P.ck(C.d.ei((a-t)*1000),t)},
+return P.ck(C.d.ei((a-t)*1000),t,0)},
 a_q:function(){var t=new H.DV()
 t.Da()
 return t},
@@ -3990,7 +3990,7 @@ if(a>=10)return"0"+a
 return"00"+a},
 uF:function(a){if(a>=10)return""+a
 return"0"+a},
-ck:function(a,b){return new P.ap(1000*b+a)},
+ck:function(a,b,c){return new P.ap(1e6*c+1000*b+a)},
 a06:function(){return new P.aX()},
 ip:function(a){if(typeof a=="number"||H.jG(a)||null==a)return J.eR(a)
 if(typeof a=="string")return JSON.stringify(a)
@@ -10540,7 +10540,7 @@ Yr:function(a,b){var t=H.b(a.split("\n"),u.s)
 $.DP().J(0,t)
 if(!$.TZ)D.XF()},
 XF:function(){var t,s,r=$.TZ=!1,q=$.UC()
-if(P.ck(q.gyc(),0).a>1e6){q.dT(0)
+if(P.ck(q.gyc(),0,0).a>1e6){q.dT(0)
 t=q.b
 q.a=t==null?$.p1.$0():t
 $.DA=0}while(!0){if($.DA<12288){q=$.DP()
@@ -13534,7 +13534,7 @@ this.a.a=!1
 t=C.d.ei(1000*a)
 s=$.a2()
 r=s.fx
-if(r!=null){q=P.ck(t,0)
+if(r!=null){q=P.ck(t,0,0)
 H.XQ(r,s.fy,q)}r=s.k1
 if(r!=null)H.Rx(r,s.k2)},
 $S:147}
@@ -13550,16 +13550,16 @@ s=a.a
 r=t.a
 if(s<r){q.nL()
 q.c=a
-return}if(q.b==null)q.b=P.by(P.ck(0,s-r),q.goI())
+return}if(q.b==null)q.b=P.by(P.ck(0,s-r,0),q.goI())
 else if(q.c.a>s){q.nL()
-q.b=P.by(P.ck(0,s-r),q.goI())}q.c=a},
+q.b=P.by(P.ck(0,s-r,0),q.goI())}q.c=a},
 nL:function(){var t=this.b
 if(t!=null){t.aW(0)
 this.b=null}},
 J3:function(){var t=this,s=t.a.$0(),r=t.c,q=s.a
 r=r.a
 if(q>=r){t.b=null
-t.d.$0()}else t.b=P.by(P.ck(0,r-q),t.goI())}}
+t.d.$0()}else t.b=P.by(P.ck(0,r-q,0),t.goI())}}
 H.Eg.prototype={
 gDO:function(){var t=new H.qj(new W.m3(window.document.querySelectorAll("meta"),u.jG),u.iN).ii(0,new H.Eh(),new H.Ei())
 return t==null?null:t.content},
@@ -17328,7 +17328,7 @@ this.a.push(h)}}
 H.PN.prototype={
 $0:function(){var t=this,s=t.b
 if(C.d.az(s.offsetWidth)!==t.c){C.oZ.ck(s)
-t.d.fj(0)}else if(P.ck(0,Date.now()-t.a.a.a).a>2e6){t.d.fj(0)
+t.d.fj(0)}else if(P.ck(0,Date.now()-t.a.a.a,0).a>2e6){t.d.fj(0)
 throw H.c(P.nB("Timed out trying to load font: "+H.a(t.e)))}else P.by(C.nU,t)},
 $C:"$0",
 $R:0,
@@ -23931,7 +23931,7 @@ aY:function(){var t,s,r,q,p,o,n=this
 n.be()
 s=n.a.e
 n.r=s
-s=P.ck(0,1000)
+s=P.ck(0,1000,0)
 n.x=s
 n.z=-1
 n.cx=0
@@ -24525,12 +24525,12 @@ return T.Mf(C.jE,H.b([this.a.c,new T.x7(0,0,0,s,T.IB(C.k_,t,t,this.gIh(),t,t),t)
 D.qx.prototype={
 y9:function(a){var t,s,r,q=this,p={}
 if(Math.abs(a)>=1?a<=0:q.a.y>0.5){t=q.a
-s=P.ck(0,Math.min(J.mE(P.K(800,0,t.y)),300))
+s=P.ck(0,Math.min(J.mE(P.K(800,0,t.y)),300),0)
 t.Q=C.aF
 t.kE(1,C.nM,s)}else{q.b.eh()
 t=q.a
 s=t.r
-if(s!=null&&s.a!=null){s=P.ck(0,J.mE(P.K(0,800,t.y)))
+if(s!=null&&s.a!=null){s=P.ck(0,J.mE(P.K(0,800,t.y)),0)
 t.Q=C.mj
 t.kE(0,C.nM,s)}}s=t.r
 if(s!=null&&s.a!=null){p.a=null
@@ -26155,7 +26155,7 @@ $S:80}
 U.P_.prototype={}
 U.o1.prototype={
 KF:function(a){var t=C.S.e9(this.cx/1),s=this.fr
-s.e=P.ck(0,t)
+s.e=P.ck(0,t,0)
 s.cV(0)
 this.fy.cV(0)},
 H1:function(a){if(a===C.J)this.u()},
@@ -32880,7 +32880,7 @@ Oh:function(){var t=this
 t.dy$=t.tY(t.fr$)
 t.dx$=null},
 tY:function(a){var t=this.dx$,s=t==null?C.M:new P.ap(a.a-t.a)
-return P.ck(C.S.az(s.a/$.Yh)+this.dy$.a,0)},
+return P.ck(C.S.az(s.a/$.Yh)+this.dy$.a,0,0)},
 Fy:function(a){if(this.db$){this.id$=!0
 return}this.yx(a)},
 FN:function(){if(this.id$){this.id$=!1
@@ -38192,7 +38192,7 @@ t=t.a
 q.a=o.a8(0,t.gv(t))
 q.b=Math.min(0.025+75e-8*p*p,1)
 q=s.b
-q.e=P.ck(0,C.S.az(0.15+p*0.02))
+q.e=P.ck(0,C.S.az(0.15+p*0.02),0)
 q.m5(0,0)
 s.Q=0.5
 s.a=C.qz}else{q=a.d
@@ -39934,7 +39934,7 @@ Y.uB.prototype={
 G:function(a){var t=null
 return M.Tq(new F.kM(t),C.l5.h(0,900),new T.eV(C.ag,t,t,new T.nk(t),t))}}
 Y.nU.prototype={
-G:function(a){var t=null,s=P.ck(0,200)
+G:function(a){var t=null,s=P.ck(0,200,0)
 s=T.Vb(H.b([M.h5(t,new T.e1(360,60,new M.qc(["andreas garvik"],A.fy(t,t,C.dM.h(0,500),t,t,t,t,t,t,t,t,46,t,t,t,t,!0,t,t,t,t,t,t),s,!1,t),t),t,t,t,new V.as(22,0,0,25),t,t),new X.yn(t)],u.E),C.l3)
 return M.Tq(new F.kM(t),C.l5.h(0,900),new T.eV(C.ag,t,t,new T.e1(360,160,s,t),t))}}
 T.zj.prototype={
@@ -39948,7 +39948,7 @@ T.qy.prototype={
 aY:function(){var t=this
 t.be()
 t.e=new T.vS(t.d,H.b([],u.qW),u.pq)
-P.WK(P.ck(0,100),new T.Oa(t))},
+P.WK(P.ck(0,100,0),new T.Oa(t))},
 DR:function(a,b,c){return new Y.uC(c,this.e.b[b],null)},
 G:function(a){var t=null
 return new T.e1(600,t,M.h5(t,new K.lh(new O.Fe(),new X.mJ(this.gDQ(),this.d),t),t,t,t,new V.as(30,50,30,50),t,t),t)}}
@@ -40021,7 +40021,7 @@ case 4:throw H.c("Could not launch "+a)
 case 3:return P.aa(null,s)}})
 return P.ab($async$jg,s)},
 aY:function(){this.be()
-var t=G.df(null,P.ck(0,500),0,null,1,null,this)
+var t=G.df(null,P.ck(0,0,1),0,null,1,null,this)
 this.d=t
 t.cV(0)},
 G:function(a){var t=null,s=this.d,r=this.a
@@ -40100,9 +40100,11 @@ return t}t=r.mg("http")||r.mg("https")||r.mg("mailto")
 s=new P.G($.F,u.e)
 s.b_(t)
 return s},
-z1:function(a,b,c,d,e,f,g){var t=C.b3.NH(window,a,""),s=new P.G($.F,u.e)
-s.b_(t!=null)
-return s}}
+z1:function(a,b,c,d,e,f,g){var t,s=self.window.navigator.standalone,r=(s==null?!1:s)?"_top":""
+s=C.b3.NH(window,a,r)
+t=new P.G($.F,u.e)
+t.b_(s!=null)
+return t}}
 A.S5.prototype={
 $2:function(a,b){var t=536870911&a+J.aQ(b)
 t=536870911&t+((524287&t)<<10)
@@ -43616,7 +43618,7 @@ t($,"a5D","Z0",function(){return new T.Hp()})
 t($,"a6E","i4",function(){return new K.Qd()})
 t($,"a6F","ZE",function(){return new K.Qb()})
 t($,"a6G","Sq",function(){return new K.Qc()})
-t($,"a6y","ZA",function(){return P.ck(16667,0)})
+t($,"a6y","ZA",function(){return P.ck(16667,0,0)})
 t($,"a5W","Z8",function(){return M.a1H(0.5,1.1,100)})
 t($,"a5X","Z9",function(){var s,r
 $.bl.toString
@@ -43657,6 +43659,18 @@ W.rC.$nativeSuperclassTag="EventTarget"
 W.rD.$nativeSuperclassTag="EventTarget"
 W.rP.$nativeSuperclassTag="EventTarget"
 W.rQ.$nativeSuperclassTag="EventTarget"})()
+Function.prototype.$1=function(a){return this(a)}
+Function.prototype.$0=function(){return this()}
+Function.prototype.$2=function(a,b){return this(a,b)}
+Function.prototype.$1$1=function(a){return this(a)}
+Function.prototype.$3=function(a,b,c){return this(a,b,c)}
+Function.prototype.$4=function(a,b,c,d){return this(a,b,c,d)}
+Function.prototype.$1$0=function(){return this()}
+Function.prototype.$8=function(a,b,c,d,e,f,g,h){return this(a,b,c,d,e,f,g,h)}
+Function.prototype.$1$5=function(a,b,c,d,e){return this(a,b,c,d,e)}
+Function.prototype.$5=function(a,b,c,d,e){return this(a,b,c,d,e)}
+Function.prototype.$6=function(a,b,c,d,e,f){return this(a,b,c,d,e,f)}
+Function.prototype.$2$0=function(){return this()}
 convertAllToFastObject(w)
 convertToFastObject($);(function(a){if(typeof document==="undefined"){a(null)
 return}if(typeof document.currentScript!='undefined'){a(document.currentScript)
