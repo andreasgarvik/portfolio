@@ -21,7 +21,7 @@ class Work extends StatelessWidget {
               WorkCard(
                 'assets/siamawanders.png',
                 'reactjs firebase',
-                'https://siamawanders.com/',
+                'https://siamawandersblog.web.app',
               ),
             ],
           ),

@@ -41969,7 +41969,7 @@ H:function(a){var s=null,r=P.cq(0,200,0)
 r=T.Xw(H.b([M.hy(s,new T.ek(360,60,new M.qN(["andreas garvik"],A.fW(s,s,C.hc.h(0,500),s,s,s,s,s,s,s,s,46,s,s,s,s,!0,s,s,s,s,s,s),r,!1,s),s),s,s,s,new V.aA(22,0,0,25),s,s),new X.zv(s)],t.t),C.lG)
 return M.VM(new F.lj(s),C.lI.h(0,900),new T.ff(C.aD,s,s,new T.ek(360,160,r,s),s))}}
 T.Aq.prototype={
-H:function(a){var s=null,r=H.b([new U.mk("assets/cloudlyricsapp.png","reactjs nodejs googlecloud docker","https://cloudlyricsapp-m7pao6rimq-uc.a.run.app",s),new U.mk("assets/siamawanders.png","reactjs firebase","https://siamawanders.com/",s)],t.t),q=P.aK([null,0],t.gm,t.e),p=r.length
+H:function(a){var s=null,r=H.b([new U.mk("assets/cloudlyricsapp.png","reactjs nodejs googlecloud docker","https://cloudlyricsapp-m7pao6rimq-uc.a.run.app",s),new U.mk("assets/siamawanders.png","reactjs firebase","https://siamawandersblog.web.app",s)],t.t),q=P.aK([null,0],t.gm,t.e),p=r.length
 return M.VM(new F.lj(s),C.lI.h(0,900),new T.ff(C.aD,s,s,new T.fE(C.us,new B.wV(new G.NU(!0,!0,!0,r,q),new V.aA(0,100,0,0),C.q,!1,s,!0,C.n5,!1,s,0,s,p,C.N,C.q6,s),s),s))}}
 A.hX.prototype={}
 T.o1.prototype={
