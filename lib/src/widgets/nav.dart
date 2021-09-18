@@ -8,8 +8,8 @@ class Nav extends StatelessWidget with PreferredSizeWidget {
       backgroundColor: Colors.transparent,
       elevation: 0,
       actions: <Widget>[
-        NavButton('home'),
-        NavButton('work'),
+        NavButton('info'),
+        NavButton('projects'),
         NavButton('cv'),
       ],
     );

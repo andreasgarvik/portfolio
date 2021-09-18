@@ -1,6 +1,5 @@
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
-import '../tools/mouse_cursor.dart';
 
 class Social extends StatelessWidget {
   _launchURL(String url) async {
@@ -18,7 +17,8 @@ class Social extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          MouseCursor(
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
             child: GestureDetector(
               onTap: () =>
                   _launchURL("https://www.facebook.com/andreas.garvik"),
@@ -28,7 +28,8 @@ class Social extends StatelessWidget {
               ),
             ),
           ),
-          MouseCursor(
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
             child: GestureDetector(
               onTap: () => _launchURL("https://github.com/andreasgarvik"),
               child: Image.asset(
@@ -37,7 +38,8 @@ class Social extends StatelessWidget {
               ),
             ),
           ),
-          MouseCursor(
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
             child: GestureDetector(
               onTap: () => _launchURL(
                   "https://www.linkedin.com/in/andreas-garvik-911330158"),

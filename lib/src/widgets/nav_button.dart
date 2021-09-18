@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../tools/mouse_cursor.dart';
 
 class NavButton extends StatelessWidget {
   final String route;
@@ -10,7 +9,8 @@ class NavButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(18.0),
-      child: MouseCursor(
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
         child: GestureDetector(
           onTap: () => Navigator.pushReplacementNamed(context, route),
           child: Container(

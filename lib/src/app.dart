@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/home.dart';
-import 'screens/work.dart';
+import 'screens/info.dart';
+import 'screens/projects.dart';
 import 'screens/cv.dart';
 
 class App extends StatelessWidget {
@@ -9,13 +9,13 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'portfolio',
-      home: Home(),
+      home: Info(),
       onGenerateRoute: (routeSettings) {
-        if (routeSettings.name == 'home') {
-          return PageRouteBuilder(pageBuilder: (_, a1, a2) => Home());
+        if (routeSettings.name == 'info') {
+          return PageRouteBuilder(pageBuilder: (_, a1, a2) => Info());
         }
-        if (routeSettings.name == 'work') {
-          return PageRouteBuilder(pageBuilder: (_, a1, a2) => Work());
+        if (routeSettings.name == 'projects') {
+          return PageRouteBuilder(pageBuilder: (_, a1, a2) => Projects());
         }
         if (routeSettings.name == 'cv') {
           return PageRouteBuilder(pageBuilder: (_, a1, a2) => Cv());
