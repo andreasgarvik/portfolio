@@ -19,11 +19,6 @@ class Projects extends StatelessWidget {
                 'https://cloudlyricsapp-m7pao6rimq-uc.a.run.app',
               ),
               ProjectCard(
-                'assets/siamawanders.png',
-                'reactjs firebase',
-                'https://siamawandersblog.web.app',
-              ),
-              ProjectCard(
                 'assets/garvik-lang.png',
                 'golang antlr',
                 'https://github.com/andreasgarvik/garvik-lang',
